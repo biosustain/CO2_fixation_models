@@ -1607,12 +1607,12 @@
       <parameter sboTerm="SBO:0000626" id="cobra_0_bound" value="0" constant="true"/>
       <parameter sboTerm="SBO:0000626" id="minus_inf" value="-INF" constant="true"/>
       <parameter sboTerm="SBO:0000626" id="plus_inf" value="INF" constant="true"/>
-      <parameter sboTerm="SBO:0000625" id="R_EX_co2_e_lower_bound" value="-10" units="mmol_per_gDW_per_hr" constant="true"/>
+      <parameter sboTerm="SBO:0000625" id="R_EX_h2_e_lower_bound" value="-10" units="mmol_per_gDW_per_hr" constant="true"/>
       <parameter sboTerm="SBO:0000625" id="R_CODH_ACS_lower_bound" value="1" units="mmol_per_gDW_per_hr" constant="true"/>
       <parameter sboTerm="SBO:0000625" id="R_CODH_ACS_upper_bound" value="1" units="mmol_per_gDW_per_hr" constant="true"/>
     </listOfParameters>
     <listOfReactions>
-      <reaction metaid="meta_R_EX_h2_e" sboTerm="SBO:0000627" id="R_EX_h2_e" name="H2 exchange" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_EX_h2_e" sboTerm="SBO:0000627" id="R_EX_h2_e" name="H2 exchange" reversible="true" fast="false" fbc:lowerFluxBound="R_EX_h2_e_lower_bound" fbc:upperFluxBound="cobra_default_ub">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_R_EX_h2_e">
@@ -1769,7 +1769,7 @@
           <speciesReference species="M_h2o_e" stoichiometry="1" constant="true"/>
         </listOfReactants>
       </reaction>
-      <reaction metaid="meta_R_EX_co2_e" sboTerm="SBO:0000627" id="R_EX_co2_e" name="CO2 exchange" reversible="true" fast="false" fbc:lowerFluxBound="R_EX_co2_e_lower_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_EX_co2_e" sboTerm="SBO:0000627" id="R_EX_co2_e" name="CO2 exchange" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_R_EX_co2_e">
@@ -3520,7 +3520,7 @@
     <fbc:listOfObjectives fbc:activeObjective="obj">
       <fbc:objective fbc:id="obj" fbc:type="maximize">
         <fbc:listOfFluxObjectives>
-          <fbc:fluxObjective fbc:reaction="R_EX_ac_e" fbc:coefficient="1"/>
+          <fbc:fluxObjective fbc:reaction="R_SK_atp_c" fbc:coefficient="1"/>
         </fbc:listOfFluxObjectives>
       </fbc:objective>
     </fbc:listOfObjectives>
@@ -3587,21 +3587,6 @@
           </rdf:RDF>
         </annotation>
       </fbc:geneProduct>
-      <fbc:geneProduct metaid="meta_G_CLJU_RS18520" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS18520" fbc:name="CLJU_RS18520" fbc:label="G_CLJU_RS18520">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_G_CLJU_RS18520">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503005389"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS18520"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c37610"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </fbc:geneProduct>
       <fbc:geneProduct metaid="meta_G_CLJU_RS18525" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS18525" fbc:name="CLJU_RS18525" fbc:label="G_CLJU_RS18525">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
@@ -3611,6 +3596,21 @@
                   <rdf:li rdf:resource="https://identifiers.org/ncbigi/503005390"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS18525"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c37620"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </fbc:geneProduct>
+      <fbc:geneProduct metaid="meta_G_CLJU_RS18520" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS18520" fbc:name="CLJU_RS18520" fbc:label="G_CLJU_RS18520">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_G_CLJU_RS18520">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503005389"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS18520"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c37610"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -3647,6 +3647,21 @@
           </rdf:RDF>
         </annotation>
       </fbc:geneProduct>
+      <fbc:geneProduct metaid="meta_G_CLJU_RS04485" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS04485" fbc:name="CLJU_RS04485" fbc:label="G_CLJU_RS04485">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_G_CLJU_RS04485">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503002599"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS04485"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c09100"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </fbc:geneProduct>
       <fbc:geneProduct metaid="meta_G_CLJU_RS04480" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS04480" fbc:name="CLJU_RS04480" fbc:label="G_CLJU_RS04480">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
@@ -3662,15 +3677,30 @@
           </rdf:RDF>
         </annotation>
       </fbc:geneProduct>
-      <fbc:geneProduct metaid="meta_G_CLJU_RS04485" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS04485" fbc:name="CLJU_RS04485" fbc:label="G_CLJU_RS04485">
+      <fbc:geneProduct metaid="meta_G_CLJU_RS18490" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS18490" fbc:name="CLJU_RS18490" fbc:label="G_CLJU_RS18490">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_G_CLJU_RS04485">
+            <rdf:Description rdf:about="#meta_G_CLJU_RS18490">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503002599"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS04485"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c09100"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503005383"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS18490"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c37550"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </fbc:geneProduct>
+      <fbc:geneProduct metaid="meta_G_CLJU_RS18545" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS18545" fbc:name="CLJU_RS18545" fbc:label="G_CLJU_RS18545">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_G_CLJU_RS18545">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503005394"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS18545"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c37660"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -3737,21 +3767,6 @@
           </rdf:RDF>
         </annotation>
       </fbc:geneProduct>
-      <fbc:geneProduct metaid="meta_G_CLJU_RS18490" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS18490" fbc:name="CLJU_RS18490" fbc:label="G_CLJU_RS18490">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_G_CLJU_RS18490">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503005383"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS18490"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c37550"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </fbc:geneProduct>
       <fbc:geneProduct metaid="meta_G_CLJU_RS18465" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS18465" fbc:name="CLJU_RS18465" fbc:label="G_CLJU_RS18465">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
@@ -3776,21 +3791,6 @@
                   <rdf:li rdf:resource="https://identifiers.org/ncbigi/503005385"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS18500"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c37570"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </fbc:geneProduct>
-      <fbc:geneProduct metaid="meta_G_CLJU_RS18545" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS18545" fbc:name="CLJU_RS18545" fbc:label="G_CLJU_RS18545">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_G_CLJU_RS18545">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503005394"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS18545"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c37660"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -3827,21 +3827,6 @@
           </rdf:RDF>
         </annotation>
       </fbc:geneProduct>
-      <fbc:geneProduct metaid="meta_G_CLJU_RS09865" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS09865" fbc:name="CLJU_RS09865" fbc:label="G_CLJU_RS09865">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_G_CLJU_RS09865">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503003689"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS09865"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c20110"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </fbc:geneProduct>
       <fbc:geneProduct metaid="meta_G_CLJU_RS09915" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS09915" fbc:name="CLJU_RS09915" fbc:label="G_CLJU_RS09915">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
@@ -3851,6 +3836,21 @@
                   <rdf:li rdf:resource="https://identifiers.org/ncbigi/503003699"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS09915"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c20210"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </fbc:geneProduct>
+      <fbc:geneProduct metaid="meta_G_CLJU_RS09865" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS09865" fbc:name="CLJU_RS09865" fbc:label="G_CLJU_RS09865">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_G_CLJU_RS09865">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503003689"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS09865"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c20110"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -3872,21 +3872,6 @@
           </rdf:RDF>
         </annotation>
       </fbc:geneProduct>
-      <fbc:geneProduct metaid="meta_G_CLJU_RS05830" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS05830" fbc:name="CLJU_RS05830" fbc:label="G_CLJU_RS05830">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_G_CLJU_RS05830">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503002877"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS05830"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c11880"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </fbc:geneProduct>
       <fbc:geneProduct metaid="meta_G_CLJU_RS08095" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS08095" fbc:name="CLJU_RS08095" fbc:label="G_CLJU_RS08095">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
@@ -3902,75 +3887,15 @@
           </rdf:RDF>
         </annotation>
       </fbc:geneProduct>
-      <fbc:geneProduct metaid="meta_G_CLJU_RS07210" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS07210" fbc:name="CLJU_RS07210" fbc:label="G_CLJU_RS07210">
+      <fbc:geneProduct metaid="meta_G_CLJU_RS05830" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS05830" fbc:name="CLJU_RS05830" fbc:label="G_CLJU_RS05830">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_G_CLJU_RS07210">
+            <rdf:Description rdf:about="#meta_G_CLJU_RS05830">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503003160"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS07210"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c14710"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </fbc:geneProduct>
-      <fbc:geneProduct metaid="meta_G_CLJU_RS03460" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS03460" fbc:name="CLJU_RS03460" fbc:label="G_CLJU_RS03460">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_G_CLJU_RS03460">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503002397"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS03460"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c07030"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </fbc:geneProduct>
-      <fbc:geneProduct metaid="meta_G_CLJU_RS07205" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS07205" fbc:name="CLJU_RS07205" fbc:label="G_CLJU_RS07205">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_G_CLJU_RS07205">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503003159"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS07205"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c14700"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </fbc:geneProduct>
-      <fbc:geneProduct metaid="meta_G_CLJU_RS03470" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS03470" fbc:name="CLJU_RS03470" fbc:label="G_CLJU_RS03470">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_G_CLJU_RS03470">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503002399"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS03470"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c07050"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </fbc:geneProduct>
-      <fbc:geneProduct metaid="meta_G_CLJU_RS03480" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS03480" fbc:name="CLJU_RS03480" fbc:label="G_CLJU_RS03480">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_G_CLJU_RS03480">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/754059784"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS03480"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c07070"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503002877"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS05830"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c11880"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -4016,6 +3941,81 @@
                   <rdf:li rdf:resource="https://identifiers.org/ncbigi/503002398"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS03465"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c07040"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </fbc:geneProduct>
+      <fbc:geneProduct metaid="meta_G_CLJU_RS07210" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS07210" fbc:name="CLJU_RS07210" fbc:label="G_CLJU_RS07210">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_G_CLJU_RS07210">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503003160"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS07210"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c14710"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </fbc:geneProduct>
+      <fbc:geneProduct metaid="meta_G_CLJU_RS03460" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS03460" fbc:name="CLJU_RS03460" fbc:label="G_CLJU_RS03460">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_G_CLJU_RS03460">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503002397"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS03460"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c07030"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </fbc:geneProduct>
+      <fbc:geneProduct metaid="meta_G_CLJU_RS03470" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS03470" fbc:name="CLJU_RS03470" fbc:label="G_CLJU_RS03470">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_G_CLJU_RS03470">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503002399"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS03470"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c07050"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </fbc:geneProduct>
+      <fbc:geneProduct metaid="meta_G_CLJU_RS03480" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS03480" fbc:name="CLJU_RS03480" fbc:label="G_CLJU_RS03480">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_G_CLJU_RS03480">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/754059784"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS03480"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c07070"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </fbc:geneProduct>
+      <fbc:geneProduct metaid="meta_G_CLJU_RS07205" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS07205" fbc:name="CLJU_RS07205" fbc:label="G_CLJU_RS07205">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_G_CLJU_RS07205">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503003159"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS07205"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c14700"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -4112,6 +4112,21 @@
           </rdf:RDF>
         </annotation>
       </fbc:geneProduct>
+      <fbc:geneProduct metaid="meta_G_CLJU_RS01165" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS01165" fbc:name="CLJU_RS01165" fbc:label="G_CLJU_RS01165">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_G_CLJU_RS01165">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503001952"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS01165"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c02380"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </fbc:geneProduct>
       <fbc:geneProduct metaid="meta_G_CLJU_RS01175" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS01175" fbc:name="CLJU_RS01175" fbc:label="G_CLJU_RS01175">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
@@ -4151,6 +4166,21 @@
                   <rdf:li rdf:resource="https://identifiers.org/ncbigi/503001957"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS01190"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c02430"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </fbc:geneProduct>
+      <fbc:geneProduct metaid="meta_G_CLJU_RS01170" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS01170" fbc:name="CLJU_RS01170" fbc:label="G_CLJU_RS01170">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_G_CLJU_RS01170">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503001953"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS01170"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c02390"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -4202,21 +4232,6 @@
           </rdf:RDF>
         </annotation>
       </fbc:geneProduct>
-      <fbc:geneProduct metaid="meta_G_CLJU_RS01170" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS01170" fbc:name="CLJU_RS01170" fbc:label="G_CLJU_RS01170">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_G_CLJU_RS01170">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503001953"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS01170"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c02390"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </fbc:geneProduct>
       <fbc:geneProduct metaid="meta_G_CLJU_RS01195" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS01195" fbc:name="atpC" fbc:label="G_CLJU_RS01195">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
@@ -4227,21 +4242,6 @@
                   <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS01195"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_name/atpC"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c02440"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </fbc:geneProduct>
-      <fbc:geneProduct metaid="meta_G_CLJU_RS01165" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS01165" fbc:name="CLJU_RS01165" fbc:label="G_CLJU_RS01165">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_G_CLJU_RS01165">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503001952"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS01165"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c02380"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -4368,6 +4368,21 @@
           </rdf:RDF>
         </annotation>
       </fbc:geneProduct>
+      <fbc:geneProduct metaid="meta_G_CLJU_RS19400" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS19400" fbc:name="CLJU_RS19400" fbc:label="G_CLJU_RS19400">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_G_CLJU_RS19400">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503005561"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS19400"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c39400"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </fbc:geneProduct>
       <fbc:geneProduct metaid="meta_G_CLJU_RS19410" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS19410" fbc:name="CLJU_RS19410" fbc:label="G_CLJU_RS19410">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
@@ -4392,21 +4407,6 @@
                   <rdf:li rdf:resource="https://identifiers.org/ncbigi/503005562"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS19405"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c39410"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </fbc:geneProduct>
-      <fbc:geneProduct metaid="meta_G_CLJU_RS19400" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS19400" fbc:name="CLJU_RS19400" fbc:label="G_CLJU_RS19400">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_G_CLJU_RS19400">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503005561"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS19400"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c39400"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
