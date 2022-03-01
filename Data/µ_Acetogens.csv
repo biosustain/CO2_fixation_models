@@ -1,0 +1,35 @@
+Species,Topt,mu_max,ToptK
+Rhodospirillum rubrum,30.0,0.2,303.15
+Caldanaerobacter subterraneus,70.0,0.14,343.15
+Carboxydocella sporoproducens,60.0,1.0,333.15
+Carboxydocella thermoautotrophica,58.0,0.91,331.15
+Carboxydothermus hydrogenoformans,70.0,0.5,343.15
+Carboxydothermus islandicus ,65.0,0.5,338.15
+Carboxydothermus pertinax,65.0,0.67,338.15
+Carboxydothermus siderophilus,65.0,0.11,338.15
+Thermincola carboxydiphila,55.0,0.77,328.15
+Thermolithobacter carboxydivorans,73.0,0.77,346.15
+Thermosinus carboxydivorans,60.0,0.87,333.15
+Clostridium ljungdahlii,37.0,0.26,310.15
+Clostridium autoethanogenum,37.0,0.25,310.15
+Clostridium formicoaceticum ,37.0,0.14,310.15
+Clostridium ragsdalei,35.0,0.25,308.15
+Clostridium scatologenes,37.0,0.09,310.15
+Clostridium drakei ,30.0,0.29,303.15
+Clostridium carboxidivorans,38.0,0.23,311.15
+Alkalibaculum bacchi,37.0,0.17,310.15
+Butyribacterium methylotrophicum,37.0,0.07,310.15
+Moorella thermoautotrophica ,60.0,0.14,333.15
+Oxobacter pfennigii,37.0,0.07,310.15
+Acetobacterium Woodii ,30.0,0.16,303.15
+Blautia producta,37.0,0.67,310.15
+Clostridium aceticum,30.0,0.1,303.15
+Acetobacterium fimetarium,30.0,0.02,303.15
+Acetobacterium wieringae,30.0,0.07,303.15
+Blautia hydrogenotrophica,37.0,0.08,310.15
+Clostridium magnum,30.0,0.15,303.15
+Eubacterium aggregans,37.0,0.01,310.15
+Sporomusa acidovorans,35.0,0.07,308.15
+Sporomusa ovata,35.0,0.15,308.15
+Terrisporobacter mayombei,30.0,0.24,303.15
+Thermoanaerobacter kivui,60.0,0.57,333.15
