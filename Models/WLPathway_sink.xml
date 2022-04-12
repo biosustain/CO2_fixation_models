@@ -345,90 +345,6 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="meta_M_ac_c" sboTerm="SBO:0000247" id="M_ac_c" name="Acetate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C2H3O2">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_M_ac_c">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/ac"/>
-                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:ACET"/>
-                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:13704"/>
-                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:22165"/>
-                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:22169"/>
-                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:40480"/>
-                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:15366"/>
-                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:2387"/>
-                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:30089"/>
-                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:40486"/>
-                  <rdf:li rdf:resource="https://identifiers.org/envipath/5882df9c-dae1-4d80-a40e-db4724271456/compound/9e26dcbe-4db9-46a0-8614-9f03545032d2"/>
-                  <rdf:li rdf:resource="https://identifiers.org/envipath/5882df9c-dae1-4d80-a40e-db4724271456/compound/5e4989fc-13d3-45d4-ad57-3be380a9d3c0"/>
-                  <rdf:li rdf:resource="https://identifiers.org/envipath/650babc9-9d68-4b73-9332-11972ca26f7b/compound/a8f0be58-24e8-441b-8d81-a516a0ead4b3"/>
-                  <rdf:li rdf:resource="https://identifiers.org/envipath/4fd7f3e0-dd25-43ac-9453-dda3e52396e4/compound/d45256fe-61fa-4f5b-bb16-91a3d615e3d8"/>
-                  <rdf:li rdf:resource="https://identifiers.org/envipath/32de3cf4-e3e6-4168-956e-32fa5ddb0ce1/compound/b545cabc-8c9e-4b20-8848-efa015b481ea"/>
-                  <rdf:li rdf:resource="https://identifiers.org/envipath/650babc9-9d68-4b73-9332-11972ca26f7b/compound/3e2d750f-df31-4445-9255-163c627e9b4a"/>
-                  <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB00042"/>
-                  <rdf:li rdf:resource="https://identifiers.org/inchi_key/QTBSBXVTEAMEQO-UHFFFAOYSA-M"/>
-                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00033"/>
-                  <rdf:li rdf:resource="https://identifiers.org/kegg.drug/D00010"/>
-                  <rdf:li rdf:resource="https://identifiers.org/lipidmaps/LMFA01010002"/>
-                  <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM26"/>
-                  <rdf:li rdf:resource="https://identifiers.org/reactome.compound/1524044"/>
-                  <rdf:li rdf:resource="https://identifiers.org/reactome.compound/390305"/>
-                  <rdf:li rdf:resource="https://identifiers.org/reactome.compound/113539"/>
-                  <rdf:li rdf:resource="https://identifiers.org/reactome.compound/2022890"/>
-                  <rdf:li rdf:resource="https://identifiers.org/reactome.compound/29416"/>
-                  <rdf:li rdf:resource="https://identifiers.org/sabiork/1278"/>
-                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00029"/>
-                  <rdf:li rdf:resource="https://identifiers.org/slm/000000449"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </species>
-      <species metaid="meta_M_ac_e" sboTerm="SBO:0000247" id="M_ac_e" name="Acetate" compartment="e" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C2H3O2">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_M_ac_e">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/ac"/>
-                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:ACET"/>
-                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:13704"/>
-                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:22165"/>
-                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:22169"/>
-                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:40480"/>
-                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:15366"/>
-                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:2387"/>
-                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:30089"/>
-                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:40486"/>
-                  <rdf:li rdf:resource="https://identifiers.org/envipath/5882df9c-dae1-4d80-a40e-db4724271456/compound/9e26dcbe-4db9-46a0-8614-9f03545032d2"/>
-                  <rdf:li rdf:resource="https://identifiers.org/envipath/5882df9c-dae1-4d80-a40e-db4724271456/compound/5e4989fc-13d3-45d4-ad57-3be380a9d3c0"/>
-                  <rdf:li rdf:resource="https://identifiers.org/envipath/650babc9-9d68-4b73-9332-11972ca26f7b/compound/a8f0be58-24e8-441b-8d81-a516a0ead4b3"/>
-                  <rdf:li rdf:resource="https://identifiers.org/envipath/4fd7f3e0-dd25-43ac-9453-dda3e52396e4/compound/d45256fe-61fa-4f5b-bb16-91a3d615e3d8"/>
-                  <rdf:li rdf:resource="https://identifiers.org/envipath/32de3cf4-e3e6-4168-956e-32fa5ddb0ce1/compound/b545cabc-8c9e-4b20-8848-efa015b481ea"/>
-                  <rdf:li rdf:resource="https://identifiers.org/envipath/650babc9-9d68-4b73-9332-11972ca26f7b/compound/3e2d750f-df31-4445-9255-163c627e9b4a"/>
-                  <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB00042"/>
-                  <rdf:li rdf:resource="https://identifiers.org/inchi_key/QTBSBXVTEAMEQO-UHFFFAOYSA-M"/>
-                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00033"/>
-                  <rdf:li rdf:resource="https://identifiers.org/kegg.drug/D00010"/>
-                  <rdf:li rdf:resource="https://identifiers.org/lipidmaps/LMFA01010002"/>
-                  <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM26"/>
-                  <rdf:li rdf:resource="https://identifiers.org/reactome.compound/1524044"/>
-                  <rdf:li rdf:resource="https://identifiers.org/reactome.compound/390305"/>
-                  <rdf:li rdf:resource="https://identifiers.org/reactome.compound/113539"/>
-                  <rdf:li rdf:resource="https://identifiers.org/reactome.compound/2022890"/>
-                  <rdf:li rdf:resource="https://identifiers.org/reactome.compound/29416"/>
-                  <rdf:li rdf:resource="https://identifiers.org/sabiork/1278"/>
-                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00029"/>
-                  <rdf:li rdf:resource="https://identifiers.org/slm/000000449"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </species>
       <species metaid="meta_M_etoh_e" sboTerm="SBO:0000247" id="M_etoh_e" name="Ethanol" compartment="e" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C2H6O">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
@@ -1276,6 +1192,48 @@
           </rdf:RDF>
         </annotation>
       </species>
+      <species metaid="meta_M_ac_c" sboTerm="SBO:0000247" id="M_ac_c" name="Acetate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C2H3O2">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_ac_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/ac"/>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:ACET"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:13704"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:22165"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:22169"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:40480"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:15366"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:2387"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:30089"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:40486"/>
+                  <rdf:li rdf:resource="https://identifiers.org/envipath/5882df9c-dae1-4d80-a40e-db4724271456/compound/9e26dcbe-4db9-46a0-8614-9f03545032d2"/>
+                  <rdf:li rdf:resource="https://identifiers.org/envipath/5882df9c-dae1-4d80-a40e-db4724271456/compound/5e4989fc-13d3-45d4-ad57-3be380a9d3c0"/>
+                  <rdf:li rdf:resource="https://identifiers.org/envipath/650babc9-9d68-4b73-9332-11972ca26f7b/compound/a8f0be58-24e8-441b-8d81-a516a0ead4b3"/>
+                  <rdf:li rdf:resource="https://identifiers.org/envipath/4fd7f3e0-dd25-43ac-9453-dda3e52396e4/compound/d45256fe-61fa-4f5b-bb16-91a3d615e3d8"/>
+                  <rdf:li rdf:resource="https://identifiers.org/envipath/32de3cf4-e3e6-4168-956e-32fa5ddb0ce1/compound/b545cabc-8c9e-4b20-8848-efa015b481ea"/>
+                  <rdf:li rdf:resource="https://identifiers.org/envipath/650babc9-9d68-4b73-9332-11972ca26f7b/compound/3e2d750f-df31-4445-9255-163c627e9b4a"/>
+                  <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB00042"/>
+                  <rdf:li rdf:resource="https://identifiers.org/inchi_key/QTBSBXVTEAMEQO-UHFFFAOYSA-M"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00033"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.drug/D00010"/>
+                  <rdf:li rdf:resource="https://identifiers.org/lipidmaps/LMFA01010002"/>
+                  <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM26"/>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome.compound/1524044"/>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome.compound/390305"/>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome.compound/113539"/>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome.compound/2022890"/>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome.compound/29416"/>
+                  <rdf:li rdf:resource="https://identifiers.org/sabiork/1278"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00029"/>
+                  <rdf:li rdf:resource="https://identifiers.org/slm/000000449"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
       <species metaid="meta_M_acald_c" sboTerm="SBO:0000247" id="M_acald_c" name="Acetaldehyde" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C2H4O">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
@@ -1575,9 +1533,52 @@
           </rdf:RDF>
         </annotation>
       </species>
+      <species metaid="meta_M_ac_e" sboTerm="SBO:0000247" id="M_ac_e" name="Acetate" compartment="e" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C2H3O2">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_ac_e">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/ac"/>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:ACET"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:13704"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:22165"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:22169"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:40480"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:15366"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:2387"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:30089"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:40486"/>
+                  <rdf:li rdf:resource="https://identifiers.org/envipath/5882df9c-dae1-4d80-a40e-db4724271456/compound/9e26dcbe-4db9-46a0-8614-9f03545032d2"/>
+                  <rdf:li rdf:resource="https://identifiers.org/envipath/5882df9c-dae1-4d80-a40e-db4724271456/compound/5e4989fc-13d3-45d4-ad57-3be380a9d3c0"/>
+                  <rdf:li rdf:resource="https://identifiers.org/envipath/650babc9-9d68-4b73-9332-11972ca26f7b/compound/a8f0be58-24e8-441b-8d81-a516a0ead4b3"/>
+                  <rdf:li rdf:resource="https://identifiers.org/envipath/4fd7f3e0-dd25-43ac-9453-dda3e52396e4/compound/d45256fe-61fa-4f5b-bb16-91a3d615e3d8"/>
+                  <rdf:li rdf:resource="https://identifiers.org/envipath/32de3cf4-e3e6-4168-956e-32fa5ddb0ce1/compound/b545cabc-8c9e-4b20-8848-efa015b481ea"/>
+                  <rdf:li rdf:resource="https://identifiers.org/envipath/650babc9-9d68-4b73-9332-11972ca26f7b/compound/3e2d750f-df31-4445-9255-163c627e9b4a"/>
+                  <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB00042"/>
+                  <rdf:li rdf:resource="https://identifiers.org/inchi_key/QTBSBXVTEAMEQO-UHFFFAOYSA-M"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00033"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.drug/D00010"/>
+                  <rdf:li rdf:resource="https://identifiers.org/lipidmaps/LMFA01010002"/>
+                  <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM26"/>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome.compound/1524044"/>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome.compound/390305"/>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome.compound/113539"/>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome.compound/2022890"/>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome.compound/29416"/>
+                  <rdf:li rdf:resource="https://identifiers.org/sabiork/1278"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00029"/>
+                  <rdf:li rdf:resource="https://identifiers.org/slm/000000449"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
       <species id="M_acac_c" name="Acetoacetate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:chemicalFormula="C4H6O3"/>
       <species id="M_act_c" name="Acetone" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:chemicalFormula="C3H6O"/>
       <species id="M_act_e" name="Acetone" compartment="e" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:chemicalFormula="C3H6O"/>
+      <species id="M_aactp_c" name="Acetoacetyl phosphate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:chemicalFormula="C4H5O6P"/>
     </listOfSpecies>
     <listOfParameters>
       <parameter sboTerm="SBO:0000626" id="cobra_default_lb" value="-1000" constant="true"/>
@@ -1856,14 +1857,6 @@
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_co_e" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_ACt" name="Acetate transporter" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
-        <listOfReactants>
-          <speciesReference species="M_ac_c" stoichiometry="1" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_ac_e" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction metaid="meta_R_ETOHt" sboTerm="SBO:0000185" id="R_ETOHt" name="Ethanol reversible transport" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
@@ -2882,6 +2875,14 @@
           <speciesReference species="M_butpi_c" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
+      <reaction id="R_ACt" name="Acetate transporter" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_ac_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ac_e" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
       <reaction metaid="meta_R_EX_h2_e" sboTerm="SBO:0000627" id="R_EX_h2_e" name="Hydrogen exchange" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
         <listOfReactants>
           <speciesReference species="M_h2_e" stoichiometry="1" constant="true"/>
@@ -3014,6 +3015,27 @@
         <listOfReactants>
           <speciesReference species="M_act_e" stoichiometry="1" constant="true"/>
         </listOfReactants>
+      </reaction>
+      <reaction id="R_ptacac" name="Phosphate acetoacetyltransferase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_aacoa_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_pi_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_aactp_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_coa_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_acack" name="acetoacetate kinase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_aactp_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_adp_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_acac_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_atp_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
       </reaction>
     </listOfReactions>
     <fbc:listOfObjectives fbc:activeObjective="obj">
@@ -3176,21 +3198,6 @@
           </rdf:RDF>
         </annotation>
       </fbc:geneProduct>
-      <fbc:geneProduct metaid="meta_G_CLJU_RS18465" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS18465" fbc:name="CLJU_RS18465" fbc:label="G_CLJU_RS18465">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_G_CLJU_RS18465">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503005378"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS18465"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c37500"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </fbc:geneProduct>
       <fbc:geneProduct metaid="meta_G_CLJU_RS18550" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS18550" fbc:name="CLJU_RS18550" fbc:label="G_CLJU_RS18550">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
@@ -3245,6 +3252,21 @@
                   <rdf:li rdf:resource="https://identifiers.org/ncbigi/503005385"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS18500"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c37570"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </fbc:geneProduct>
+      <fbc:geneProduct metaid="meta_G_CLJU_RS18465" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS18465" fbc:name="CLJU_RS18465" fbc:label="G_CLJU_RS18465">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_G_CLJU_RS18465">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503005378"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS18465"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c37500"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -3326,21 +3348,6 @@
           </rdf:RDF>
         </annotation>
       </fbc:geneProduct>
-      <fbc:geneProduct metaid="meta_G_CLJU_RS09865" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS09865" fbc:name="CLJU_RS09865" fbc:label="G_CLJU_RS09865">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_G_CLJU_RS09865">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503003689"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS09865"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c20110"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </fbc:geneProduct>
       <fbc:geneProduct metaid="meta_G_CLJU_RS09915" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS09915" fbc:name="CLJU_RS09915" fbc:label="G_CLJU_RS09915">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
@@ -3350,6 +3357,21 @@
                   <rdf:li rdf:resource="https://identifiers.org/ncbigi/503003699"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS09915"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c20210"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </fbc:geneProduct>
+      <fbc:geneProduct metaid="meta_G_CLJU_RS09865" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS09865" fbc:name="CLJU_RS09865" fbc:label="G_CLJU_RS09865">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_G_CLJU_RS09865">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503003689"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS09865"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c20110"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -3371,21 +3393,6 @@
           </rdf:RDF>
         </annotation>
       </fbc:geneProduct>
-      <fbc:geneProduct metaid="meta_G_CLJU_RS05830" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS05830" fbc:name="CLJU_RS05830" fbc:label="G_CLJU_RS05830">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_G_CLJU_RS05830">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503002877"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS05830"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c11880"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </fbc:geneProduct>
       <fbc:geneProduct metaid="meta_G_CLJU_RS08100" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS08100" fbc:name="CLJU_RS08100" fbc:label="G_CLJU_RS08100">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
@@ -3395,6 +3402,21 @@
                   <rdf:li rdf:resource="https://identifiers.org/ncbigi/503003337"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS08100"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c16520"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </fbc:geneProduct>
+      <fbc:geneProduct metaid="meta_G_CLJU_RS05830" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS05830" fbc:name="CLJU_RS05830" fbc:label="G_CLJU_RS05830">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_G_CLJU_RS05830">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503002877"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS05830"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c11880"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -3425,21 +3447,6 @@
                   <rdf:li rdf:resource="https://identifiers.org/ncbigi/503004596"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS14475"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c29340"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </fbc:geneProduct>
-      <fbc:geneProduct metaid="meta_G_CLJU_RS19160" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS19160" fbc:name="CLJU_RS19160" fbc:label="G_CLJU_RS19160">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_G_CLJU_RS19160">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503005514"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS19160"/>
-                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c38920"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -3485,6 +3492,21 @@
                   <rdf:li rdf:resource="https://identifiers.org/ncbigi/503003719"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS10020"/>
                   <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c20420"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </fbc:geneProduct>
+      <fbc:geneProduct metaid="meta_G_CLJU_RS19160" sboTerm="SBO:0000243" fbc:id="G_CLJU_RS19160" fbc:name="CLJU_RS19160" fbc:label="G_CLJU_RS19160">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_G_CLJU_RS19160">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ncbigi/503005514"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_locus_tag/CLJU_RS19160"/>
+                  <rdf:li rdf:resource="https://identifiers.org/refseq_old_locus_tag/CLJU_c38920"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
