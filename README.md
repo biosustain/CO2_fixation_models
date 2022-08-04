@@ -2,7 +2,7 @@
 
 This repository contains the data and notebooks used in the research paper titled:
 
-Optimizing acetogenic CO(2) utilization through metabolic and process engineering highlights the potential of thermophilic bioproduction
+Probing efficient microbial CO2 fixation through metabolic and process modeling
 
 by authors: Philip Gorter de Vries*1, Viviënne Mol*1, Henriette Grønbech Ravn Nissen1, Daniel Bavnhøj1, Nikolaus Sonnenschein2, Torbjørn Ølshøj Jensen1 & Alex Toftgaard Nielsen1,§
 
